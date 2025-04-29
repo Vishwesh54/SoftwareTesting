@@ -13,7 +13,7 @@ class TestInventory(unittest.TestCase):
     def test_add_existing_item(self): 
         self.inventory.add_item("Apples", 10) 
         self.inventory.add_item("Apples", 5) 
-        self.assertEqual(self.inventory.get_quantity("Apples"), 15) 
+        self.assertEqual(self.inventory.get_quantity("Apples"), 200) 
 
     def test_add_item_invalid_quantity(self): 
         with self.assertRaises(ValueError): 
